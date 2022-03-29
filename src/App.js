@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import WebNavbar from './components/WebNavbar';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ListMaterials from './components/ListMaterials';
+import AddMaterials from './components/AddMaterials';
 
 function App() {
+  const [materials, setMaterials] = useState([])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <React.Fragment>
+                <WebNavbar />
+                <AddMaterials setMaterials={setMaterials} />
+                <ListMaterials materials={materials} setMaterials={setMaterials} />
+
+              </React.Fragment>
+            )}>
+          </Route>
+        </Switch>
+      </div>
+    </Router >
   );
 }
 
