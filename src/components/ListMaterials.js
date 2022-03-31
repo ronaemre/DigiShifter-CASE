@@ -56,7 +56,7 @@ const ListMaterials = ({ materials, setMaterials }) => {
                     <tbody>
 
                         {materials.filter((filtered) => {
-                            if (filtered.details && filtered.tedarikci.toLowerCase().includes(searchTerm.toLowerCase())) {
+                            if (filtered.details.toLowerCase().includes(searchTerm.toLowerCase())) {
                                 return filtered
                             }
                         })

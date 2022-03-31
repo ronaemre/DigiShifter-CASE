@@ -11,24 +11,14 @@
       "id": 12
     },
     {
-      "numbers": "007",
-      "details": "çelik",
-      "tedarikci": "TEİAŞ",
-      "weight": "150",
-      "status": true,
-      "registerdate": "20.02.2022",
-      "updatedate": "2022-04-01",
-      "id": 13
-    },
-    {
-      "numbers": "006",
-      "details": "tahta",
-      "tedarikci": "KARDEŞLER",
-      "weight": "110",
-      "status": true,
-      "registerdate": "20.02.2022",
-      "updatedate": "",
-      "id": 14
+      "numbers": "015",
+      "details": "beton",
+      "tedarikci": "ÖZTAŞ",
+      "weight": "1510",
+      "status": false,
+      "registerdate": "2022-03-31",
+      "updatedate": "2022-03-31",
+      "id": 15
     }
   ]
 }

@@ -32,7 +32,7 @@ const Search = ({ setSearchTerm, setMaterials }) => {
 
     const handlesetSearchTerm = e => {
         setSearchTerm(e.target.value)
-        getMaterials(setMaterials);
+        getMaterials(setMaterials)
         setMaterials([])
     }
 
